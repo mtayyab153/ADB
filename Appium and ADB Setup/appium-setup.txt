@@ -1,0 +1,24 @@
+1: Install jdk8.
+2: Set JAVA_HOME env variable to jdk path.(system var) : C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot
+3: Add %JAVA_HOME%\bin in env variables(path).(system var) : %JAVA_HOME%\bin
+4: Install Android Studio, emulator will be set up by default if no, do so.
+5: Add the sdk path to env varaibles (User Variables for user): C:\Users\PC1\AppData\Local\Android\Sdk
+6: Add the following paths to env variables(path).(User Variables for user):
+	%ANDROID_HOME%\tools\bin -> uiutomator
+	%ANDROID_HOME%\platform-tools -> adb
+	%ANDROID_HOME%\emulator -> emulator
+7: Make sure that tools folder is there, otherwise install tools from android studion sdk.
+8: npm install appium
+9: npm install appium-doctor
+10: pip install robotframework-appiumlibrary
+11: Add ANDROID_SWT env var in system variables: C:\Users\PC1\AppData\Local\Android\Sdk\tools\lib\x86_64
+12: appium driver install uiautomator2
+13: Start appium server by: appium --address 127.0.0.1
+14: Open app by:
+	Open Application
+            ...  http://localhost:4723
+            ...  platformName=Android
+            ...  deviceName=emulator-5554
+            ...  appPackage=chat21.android.demo
+            ...  appActivity=chat21.android.demo.SplashActivity
+            ...  automationName=Uiautomator2

@@ -1,0 +1,32 @@
+adb start-server
+adb kill-server
+adb devices: list all connected devices
+adb shell: goes into adb shell
+adb -s <device-name> <command>: goes into specific device and execute command.
+adb shell getprop: list all device properties
+adb shell getprop "ro.build.version.release": gives os version on android.
+adb shell getprop "ro.build.version.sdk": gives sdk version on android.
+adb push <file> <location>: adb push text.txt /sdcard : transfer files from pc to android.
+adb pull <android-file> <location>: adb pull /sdcard/text.txt . : transfer files form android to pc.
+adb exec-out screencap -p > <file>.png
+adb shell screenrecord "/sdcard/video_file.mp4"
+CTRL+C
+adb pull /sdcard/video_file.mp4 .
+adb shell input tap x y
+adb shell input text "Hello"
+adb shell input keyevent <keycode> : 4 for back
+adb shell pm list packages : list all packages
+run-as bk.yt.example
+adb shell dumpsys activity "bk.yt.example": info about applicaiton
+adb logcat
+adb install app.apk
+emulator -list-avds : list available emulator devices
+emulator -avd device_name : start specific emulator device
+
+
+Connect to real device without cable.first time we have to connect through cable.
+adb tcpip 5555
+adb connect 192.x.x.x:5555
+
+adb shell input text "9+9"
+adb shell input tap 551 1962
