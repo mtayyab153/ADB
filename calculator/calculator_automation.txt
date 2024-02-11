@@ -1,0 +1,7 @@
+adb shell input tap 563 1767 open calculator app 
+adb shell input tap 555 1099 press 9
+adb shell input tap 837 1986 press +
+adb shell input tap 555 1099 press 9
+adb shell input tap 551 1962 press =
+adb shell input keyevent KEYCODE_BACK
+adb shell input swipe 500 1500 500 1000
