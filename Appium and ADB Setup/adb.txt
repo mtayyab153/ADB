@@ -28,5 +28,11 @@ Connect to real device without cable.first time we have to connect through cable
 adb tcpip 5555
 adb connect 192.x.x.x:5555
 
+
+How to find AppActivity and AppPackage.
+adb shell
+open app on real device/emulator
+dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp|mObscuringWindow'
+
 adb shell input text "9+9"
 adb shell input tap 551 1962
